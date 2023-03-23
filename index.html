@@ -127,7 +127,27 @@ var a_canvas = document.getElementById("a");// a canvas will appear with a borde
 		 }
 	    </script>
 	
-	
+	<button onclick="showImage()">Show Image</button>
+		<!-- button to showcase image -->
+	    <script>
+		var canvas = document.getElementById("a");
+		     <!-- get the canvas element-->
+		    
+		var ctx = canvas.getContext("2d");
+		     <!-- get the 2D context of the canvas-->
+		    
+		var img = new Image();
+		    <!-- command for image-->
+		    
+		function showImage() {
+			 <!-- get the image on canvas -->
+			img.onload = function() {
+			ctx.drawImage(img, 0, 0);
+			};
+			 img.src = "https://media.tenor.com/94bJaWdsZ4wAAAAM/bunny-cute.gif";
+				<!-- picture found off of google -->
+			}
+	   </script>
 
     	</div>
 </div>
