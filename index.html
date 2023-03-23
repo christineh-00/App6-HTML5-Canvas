@@ -77,15 +77,16 @@ var a_canvas = document.getElementById("a");// a canvas will appear with a borde
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> 
+	// button to move onto the next page that shows the canvas and buttons
 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Click On Each Button To Reveal Something New!</h1>
-		<!--added in the title: Click On Each Button To Reveal Something New!-->
+		// added in the title: Click On Each Button To Reveal Something New!
 	</div>
 
     	<canvas id="a" width="350" height="250" style="border:1px solid #000000;"></canvas>
-		<!--created a canvas code that will appear with a border around it -->
+		// created a canvas code that will appear with a border around it
 
  	<button onclick="drawSquare()">Draw Square</button>
 	    <script>
@@ -104,9 +105,18 @@ var a_canvas = document.getElementById("a");// a canvas will appear with a borde
 		    // Draw the square
 		    ctx.fillStyle = squareColor;
 		    ctx.fillRect(squarePos.x, squarePos.y, squareSize, squareSize);
+			// the two script above were provided by ChatGPT after I asked the following question "what is the code to draw a square"
 		}
 	    </script> 
-		// the script above were provided by ChatGPT after I asked the following question "what is the code to draw a square and how do I link that to a button"
+	
+	 <button onclick="showText()">Show Text</button>
+	 <p id="myText" style="display: none;">Christine Ho</p>
+	    <script>
+		function showText() {
+		    var text = document.getElementById("myText");
+		    text.style.display = "block";
+		}
+	    </script>
 	
 	
 
