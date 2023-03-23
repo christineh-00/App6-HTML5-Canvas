@@ -105,7 +105,7 @@ var a_canvas = document.getElementById("a");// a canvas will appear with a borde
 
 		    ctx.fillStyle = squareColor;
 		    ctx.fillRect(squarePos.x, squarePos.y, squareSize, squareSize);
-			<!-- the two script above were provided by ChatGPT after I asked the following question "what is the code to draw a square" -->
+			<!-- the two script above was apart of a code provided by ChatGPT after I asked the following question "what is the code to draw a square?" -->
 		}
 	    </script> 
 	
@@ -147,8 +147,22 @@ var a_canvas = document.getElementById("a");// a canvas will appear with a borde
 			 img.src = "https://media.tenor.com/94bJaWdsZ4wAAAAM/bunny-cute.gif";
 				<!-- picture found off of google -->
 			}
-	   </script>
+		</script>
 
+	 <button onclick="clearCanvas()">Clear</button>
+		<!-- button to clear canvas -->
+		<script>
+		    var canvas = document.getElementById("a");
+			 <!-- get the canvas element-->
+		    var ctx = canvas.getContext("2d");
+			 <!-- get the 2D context of the canvas-->
+
+		    function clearCanvas() {
+		        ctx.clearRect(0, 0, canvas.width, canvas.height);
+			    <!-- the script above were apart of a code provided  by ChatGPT after I asked the following question "what is the code to clear canvas?"-->
+		}
+		</script>
+	
     	</div>
 </div>
 
