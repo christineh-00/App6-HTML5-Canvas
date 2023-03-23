@@ -114,10 +114,16 @@ var a_canvas = document.getElementById("a");// a canvas will appear with a borde
 	 <p id="myText" style="display: none;">Christine Ho</p>
 		<!-- what will be showing -->
 	    <script>
+		    var canvas = document.getElementById("a");
+		    <!-- get the canvas element-->
+
+		var ctx = canvas.getContext("2d");
+		    <!-- get the 2D context of the canvas-->
+		    
 		function showText() {
 		    var text = document.getElementById("myText");
 		    text.style.display = "block";
-			<!-- make sure that it will be displayed -->
+			<!-- displayed the text -->
 		}
 	    </script>
 	
